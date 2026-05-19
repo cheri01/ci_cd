@@ -4,10 +4,14 @@ on:
   push:
     paths:
       - 'go/**/*.go'
+      - '.github/workflows/test.yml'
+
 
   pull_request:
     paths:
       - 'go/**/*.go'
+      - '.github/workflows/test.yml'
+
 
 jobs:
   test:
